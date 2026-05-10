@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.input-cls {
+  display: block;
+  width: 50%;
+  min-width: 400px;
+  margin: 15px;
+  padding: 10px;
+  border: 3px solid rgb(24, 125, 208);
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: monospace;
+}
+.input-cls:focus-visible {
+  outline: none;
+  box-shadow: 0px 0px 5px 1px rgb(24, 125, 208);
+}
+
+.btn-cls {
+  margin: 0px 16px;
+  padding: 6px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-family: monospace;
+  background: white;
+}
+
+.saveinput-cls {
+  color: green;
+  border: 3px solid green;
+}
+.saveinput-cls:hover {
+  color: rgb(35, 187, 35);
+  box-shadow: 0px 0px 5px 1px rgb(35, 187, 35);
+}
+
+.savetab-cls {
+  color: blue;
+  border: 3px solid blue;
+}
+.savetab-cls:hover {
+  color: rgb(38, 38, 203);
+  box-shadow: 0px 0px 5px 1px rgb(38, 38, 203);
+}
+
+.deleteall-cls {
+  color: red;
+  border: 3px solid red;
+}
+.deleteall-cls:hover {
+  color: rgb(212, 32, 32);
+  box-shadow: 0px 0px 5px 1px rgb(212, 32, 32);
+}
