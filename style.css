@@ -18,6 +18,27 @@
   outline: none;
   box-shadow: 0px 0px 5px 1px rgb(24, 125, 208);
 }
+.btn-container-class {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 18px;
+}
+
+.ul-cls {
+  list-style: none;
+  margin-left: 20px;
+  font-family: monospace;
+  font-size: large;
+  font-weight: bold;
+}
+
+.li-cls {
+  margin: 10px;
+}
+
+.an-cls {
+  color: rgb(20, 198, 20);
+}
 
 .btn-cls {
   margin: 0px 16px;
