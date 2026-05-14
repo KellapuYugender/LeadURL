@@ -3,8 +3,14 @@
   padding: 0px;
 }
 
+body {
+  margin: 0px;
+  padding: 10px;
+  min-width: 400px;
+}
 .input-cls {
   display: block;
+  /* box-sizing: border-box; */
   width: 50%;
   min-width: 400px;
   margin: 15px;
@@ -26,14 +32,14 @@
 
 .ul-cls {
   list-style: none;
-  margin-left: 20px;
+  margin-left: 15px;
   font-family: monospace;
   font-size: large;
   font-weight: bold;
 }
 
 .li-cls {
-  margin: 10px;
+  margin-bottom: 5px;
 }
 
 .an-cls {
@@ -50,12 +56,12 @@
 }
 
 .saveinput-cls {
-  color: green;
-  border: 3px solid green;
+  color: purple;
+  border: 3px solid purple;
 }
 .saveinput-cls:hover {
-  color: rgb(35, 187, 35);
-  box-shadow: 0px 0px 5px 1px rgb(35, 187, 35);
+  color: rgb(150, 13, 150);
+  box-shadow: 0px 0px 5px 1px rgb(150, 13, 150);
 }
 
 .savetab-cls {
