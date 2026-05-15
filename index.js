@@ -14,10 +14,20 @@ if (localStorageData) {
 }
 
 saveInputEl.addEventListener("click", function () {
-  myLeads.push(inputEl.value);
-  localStorage.setItem("myLeads", JSON.stringify(myLeads));
-  render(myLeads);
-  inputEl.value = "";
+  if (inputEl.value) {
+    myLeads.push("https://" + inputEl.value + "/");
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    render(myLeads);
+    inputEl.value = "";
+  }
+});
+
+saveTabEl.addEventListener("click", function () {
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    myLeads.push(tabs[0].url);
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    render(myLeads);
+  });
 });
 
 deleteEl.addEventListener("dblclick", function () {
@@ -32,7 +42,7 @@ function render(leads) {
   for (let i = 0; i < leads.length; i++) {
     listItems += `
     <li class="li-cls">
-      <a href="https://${leads[i]}/" class = an-cls target = _black>
+      <a href="${leads[i]}" class = an-cls target = _black>
           ${leads[i]}
       </a>
     </li>
